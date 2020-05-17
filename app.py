@@ -24,7 +24,7 @@ def load_data(nrows):
     #data = data[['date/time', 'latitude', 'longitude']]
     return data
 
-data = load_data(15000)
+data = load_data(100000)
 data[['latitude','longitude']].to_csv('lat_long.csv', index=False)
 
 
